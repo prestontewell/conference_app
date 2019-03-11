@@ -1,0 +1,1 @@
+json.partial! "speakers.json.jbuilder", inside_speaker: @speaker

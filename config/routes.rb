@@ -8,5 +8,7 @@ Rails.application.routes.draw do
   # end
   namespace :api do
     get '/speakers' => 'speakers#index'
+    get '/speakers/:id' => 'speakers#show'
+    post '/speakers' => 'speakers#create'
   end
 end
