@@ -10,5 +10,6 @@ Rails.application.routes.draw do
     get '/speakers' => 'speakers#index'
     get '/speakers/:id' => 'speakers#show'
     post '/speakers' => 'speakers#create'
+    patch '/speakers/:id' => 'speakers#update'
   end
 end

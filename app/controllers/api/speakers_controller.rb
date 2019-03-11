@@ -19,4 +19,13 @@ class Api::SpeakersController < ApplicationController
     render 'show.json.jbuilder'
   end
 
+  def update
+    @speaker = Speaker.find(params[:id])
+    @speaker.first_name = params[:first_name] || @speaker.first_name
+    @speaker.last_name = params[:last_name] || @speaker.last_name
+    @speaker.email = params[:email] || @speaker.email
+    @speaker.save
+    render 'show.json.jbuilder'
+  end
+
 end
