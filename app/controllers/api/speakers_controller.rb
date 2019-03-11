@@ -28,4 +28,10 @@ class Api::SpeakersController < ApplicationController
     render 'show.json.jbuilder'
   end
 
+  def destroy
+    @speaker = Speaker.find(params[:id])
+    @speaker.destroy
+    render 'destroy.json.jbuilder'
+  end
+
 end

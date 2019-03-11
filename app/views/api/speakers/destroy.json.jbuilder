@@ -1,0 +1,1 @@
+json.message 'The speaker has been deleted per your request.'
